@@ -6,8 +6,6 @@ VCF=$1
 TANDEM_BED=$2
 SPECIE=$3
 
-#Remove outliers samples based on SNVs analyses
-vcftools --recode --remove-indv P591-R221 --remove-indv P591-R293 --vcf "$VCF" --stdout > "${VCF/.vcf/.filtered.vcf}"
 #First I want to set genotype of non-PASSED variants to missing (.), secondo I want to remove allv ariants called within tandem repeats
 vcftools --remove-filtered-geno-all --exclude-bed "$TANDEM_BED" --vcf "${VCF/.vcf/.filtered.vcf}" --stdout --recode > "$SPECIE"_Recoded.NoTR.vcf
 #Keep only INDELS
