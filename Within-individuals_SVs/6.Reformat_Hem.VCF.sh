@@ -1,5 +1,5 @@
 #!bin/bash
-#Apply further filtering of hemizigous SVs and prepera them for sort reads re-genotyping using Paragraph
+#Apply further filtering of hemizigous SVs and preper them for sort reads re-genotyping using Paragraph
 
 module load bioinfo-tools SURVIVOR/1.0.3 bcftools/1.17
 
