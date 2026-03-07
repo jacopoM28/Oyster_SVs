@@ -1,4 +1,4 @@
-# Oyster_SVs
+# Oysters_SVs
 Folder containing scripts for SVs analyses in oysters
 
 **1.Within-individuals_SVs:** Scripts for identification of heterozygous SVs in oysters reference genomes.  
